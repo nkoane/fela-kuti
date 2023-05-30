@@ -5,11 +5,71 @@ body {
     background-color: #f5f5f5;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ddff00;
+}
+
+a:hover {
+    background-color: #000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.ping {
+    font-weight: 700;
+    animation: ping 1s infinite;
+    background-color: black;
+    animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+@keyframes ping {
+    0%,
+    100% {
+        opacity: 0.3;
+        width: 0%;
+    }
+    50% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
 main {
     width: 80vw;
     margin: 0 auto;
     padding: 1re;
     margin-top: 3rem;
+}
+main dl,
+main dl dt,
+main dt h1,
+main dl dd {
+    margin: 0;
+    padding: 0;
+}
+
+main dl.store {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+main dl.ping {
+    animation-delay: 5s;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-duration: 1.3s;
+}
+main dl.store dt {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+main dl.store dd {
+    margin-bottom: 0.3rem;
+    margin-left: 2.3rem;
+    font-size: 0.9rem;
+    width: 50;
+    color: #666;
 }
 
 main h1 {
@@ -21,21 +81,22 @@ main h1 {
     position: relative;
 }
 
-main h1 span {
-    background-color: #ddff00;
-    color: #000;
-    margin-right: 0.4rem;
+main h1 img {
     display: inline-block;
     position: relative;
 }
 
 main div.food-group {
-    margin: 1rem;
     width: fit-content;
+    margin-bottom: 1rem;
 }
 
-main div.food-group:last-child {
-    border-top: 0.2rem solid #000;
+main div.food-group {
+    width: 100%;
+}
+
+main div.food-group:first-child {
+    border-top: none;
 }
 
 main div.food-group h2 {
@@ -46,21 +107,76 @@ main div.food-group ul {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    row-gap: 1rem;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+main div.food-group:last-child ul {
+    border-bottom: none;
 }
 
 main div.food-group ul li {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 0.5rem;
-    max-width: 200px;
+    aspect-ratio: 1;
+    width: calc((100% / 4) - 1rem);
 }
 
 main div.food-group ul li h3 {
     margin: 0;
-    margin-bottom: 0.25rem;
 }
 
 main div.food-group ul li:active {
-    background-color: red;
+    background-color: #ddff00;
+    outline: 1rem solid #ddff00;
+}
+
+main div.food-group ul li img {
+    width: 100%;
+    aspect-ratio: 1;
+    display: block;
+}
+main div.food-group ul li a {
+    display: block;
+}
+main div.food-group ul li a.pulse {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+main div.food-group ul li h3 {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+main div.food-group ul li .details {
+    margin: 0;
+    font-size: 0.8rem;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+}
+
+main div.food-group ul li .details h3 {
+    flex-grow: 1;
+    transition: all 0.6s ease-in-out;
+}
+
+main div.food-group ul li:hover .details h3 {
+    background-color: #000;
+    color: #ddff00;
 }
