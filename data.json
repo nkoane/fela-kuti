@@ -16,7 +16,7 @@
                 {
                     "name": "chicken",
                     "description": "chicken thighs, marinated in honey and lemon",
-                    "picture": "https://picsum.photos/seed/chicken/800/800",
+                    "picture": "./static/dijo/chicken.avif",
                     "price": 40.0,
                     "weight": 150,
                     "available": true
@@ -24,7 +24,7 @@
                 {
                     "name": "beef",
                     "description": "beef stew with carrots and potatoes",
-                    "picture": "https://picsum.photos/seed/beef/800/800",
+                    "picture": "./static/dijo/beef.avif",
                     "price": 50.0,
                     "weight": 150,
                     "available": true
@@ -32,7 +32,7 @@
                 {
                     "name": "pork",
                     "description": "pork chops with a sweet and sour sauce",
-                    "picture": "https://picsum.photos/seed/pork/800/800",
+                    "picture": "./static/dijo/pork.avif",
                     "price": 50.0,
                     "weight": 150,
                     "available": true
@@ -40,7 +40,7 @@
                 {
                     "name": "mogodu",
                     "description": "traditionally made, lots of flavour",
-                    "picture": "https://picsum.photos/seed/mogodu/800/800",
+                    "picture": "./static/dijo/mogodu.webp",
                     "price": 45,
                     "weight": 60,
                     "available": true
@@ -53,7 +53,7 @@
                 {
                     "name": "rice",
                     "description": "fluffy white basmati rice",
-                    "picture": "https://picsum.photos/seed/rice/800/800",
+                    "picture": "./static/dijo/rice.avif",
                     "price": 8.0,
                     "weight": 100,
                     "available": true
@@ -61,7 +61,7 @@
                 {
                     "name": "papa",
                     "description": "papa ya se tswana",
-                    "picture": "https://picsum.photos/seed/papa/800/800",
+                    "picture": "./static/dijo/papa.jpg",
                     "price": 10.0,
                     "weight": 100,
                     "available": true
@@ -69,7 +69,7 @@
                 {
                     "name": "ledombolo",
                     "description": "ledombolo le le tshwanang le papa",
-                    "picture": "https://picsum.photos/seed/ledombolo/800/800",
+                    "picture": "./static/dijo/ledombolo.jpg",
                     "price": 15.0,
                     "weight": 100,
                     "available": false
@@ -82,7 +82,7 @@
                 {
                     "name": "spinach",
                     "description": "native fresh parboiled spinach with butter and salt",
-                    "picture": "https://picsum.photos/seed/spinach/800/800",
+                    "picture": "./static/dijo/spinach.avif",
                     "price": 10.0,
                     "weight": 100,
                     "available": true
@@ -90,7 +90,7 @@
                 {
                     "name": "chakalaka",
                     "description": "a tomato, chilli and onion relish",
-                    "picture": "https://picsum.photos/seed/cabbage/800/800",
+                    "picture": "./static/dijo/chakalaka.jpg",
                     "price": 10.0,
                     "weight": 100,
                     "available": true

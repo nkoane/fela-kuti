@@ -145,6 +145,10 @@ main div.food-group ul li a.pulse {
     animation: pulse 1s infinite;
 }
 
+main div.food-group ul li a img {
+    object-fit: cover;
+}
+
 @keyframes pulse {
     0%,
     100% {
