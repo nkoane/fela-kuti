@@ -184,3 +184,10 @@ main div.food-group ul li:hover .details h3 {
     background-color: #000;
     color: #ddff00;
 }
+
+footer {
+    font-size: 0.8em;
+    padding: 1rem 0 2rem 0;
+    border-top: 1px solid #ccc;
+    text-align: right;
+}
