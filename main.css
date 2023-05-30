@@ -147,6 +147,11 @@ main div.food-group ul li a.pulse {
 
 main div.food-group ul li a img {
     object-fit: cover;
+    filter: saturate(0);
+}
+
+main div.food-group ul li:hover a img {
+    filter: saturate(1);
 }
 
 @keyframes pulse {
