@@ -17,7 +17,7 @@
                     "name": "chicken",
                     "description": "chicken thighs, marinated in honey and lemon",
                     "picture": "./static/dijo/chicken.avif",
-                    "price": 40.0,
+                    "price": 140.0,
                     "weight": 150,
                     "available": true
                 },
@@ -64,7 +64,7 @@
                     "picture": "./static/dijo/papa.jpg",
                     "price": 10.0,
                     "weight": 100,
-                    "available": true
+                    "available": false
                 },
                 {
                     "name": "ledombolo",
@@ -72,7 +72,7 @@
                     "picture": "./static/dijo/ledombolo.jpg",
                     "price": 15.0,
                     "weight": 100,
-                    "available": false
+                    "available": true
                 }
             ]
         },
@@ -85,7 +85,7 @@
                     "picture": "./static/dijo/spinach.avif",
                     "price": 10.0,
                     "weight": 100,
-                    "available": true
+                    "available": false
                 },
                 {
                     "name": "chakalaka",

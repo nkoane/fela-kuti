@@ -27,9 +27,10 @@ const stockTheStore = async (stoko) => {
         group.classList.add('food-group', foodGroup.type);
         const groupItemsList = document.createElement('ul');
         foodGroup.options.forEach((foodItem) => {
-            const item = document.createElement('li');
-            item.classList.add('food-item', `${foodItem.name}`);
-            item.innerHTML = `
+            if (foodItem.available === true) {
+                const item = document.createElement('li');
+                item.classList.add('food-item', `${foodItem.name}`);
+                item.innerHTML = `
                 <a href="#${foodGroup.type}-${foodItem.name}" class="picture pulse">
                     <img src="${foodItem.picture}" class="pulse"  />
                 </a>
@@ -39,11 +40,12 @@ const stockTheStore = async (stoko) => {
                     <span class="quantity">${foodItem.weight}g</span>
                 </div>
             `;
-            groupItemsList.appendChild(item);
-            // item.querySelector('a').style.backgroundImage()
-            item.querySelector('img').addEventListener('load', (e) => {
-                e.target.parentElement.classList.remove('pulse');
-            });
+                groupItemsList.appendChild(item);
+                // item.querySelector('a').style.backgroundImage()
+                item.querySelector('img').addEventListener('load', (e) => {
+                    e.target.parentElement.classList.remove('pulse');
+                });
+            }
             //console.log(item.querySelector('img'));
         });
 
